@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrape Report</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="bg-dark">
+    <div class="wrapper">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">Scrape Competition</a>
+        </nav>
+
+        <!-- Page Header -->
+        <div class="jumbotron">
+            <h1 class="display-4">Who Can Make a Play</h1>
+        </div>
+        
+        <!-- Article Title | Article Paragraph -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Article Title -->
+                <div class="col-md-4">
+                    <h3>Price Scraping: Velocity Pricing!<br><small>Supply & Demand</small></h3>
+                    <img src="static/images/transportationwallpaper.jpg" alt="ninja_scrape_div" width="400" height="auto"></a>
+                </div>
+                <!-- Article Paragraph -->
+                <div class="col-md-8">
+                    <p>
+                        This is a scrape for October 21, 2021
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter | Table -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Filter -->
+                <div class="col-md-3">
+                    <form class="bg-dark" action="">
+                        <p>Filter Search</p>
+                        <ul class="list-group bg-dark">
+                            <!-- Unisize -->
+                            <li class="list-group-item bg-dark">
+                                <label for="date">Enter Unisize </label>
+                                <input type="number" class="form-control" placeholder="2055516" id="Unisize">
+                            </li>
+                            <!-- Brand -->
+                            <li class="list-group-item bg-dark">
+                                <label for="date">Enter a Brand</label>
+                                <input type="text" class="form-control" placeholder="goodyear" id="Brand">
+                            </li>
+                            <!-- ItemNumber -->
+                            <li class="list-group-item bg-dark">
+                                <label for="date">Enter a ItemNumber</label>
+                                <input type="text" class="form-control" placeholder="mpn" id="ItemNumber">
+                            </li>
+                            <!-- Site -->
+                            <li class="list-group-item bg-dark">
+                                <label for="date">Enter a Site</label>
+                                <input type="text" class="form-control" placeholder="ntw" id="Site">
+                            </li>
+                             <!-- Button -->
+                            <!-- <li class="list-group-item bg-dark text-center">
+                                <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
+                            </li> -->
+                        </ul>
+                    </form>
+                </div>
+                <!-- Table -->
+                <div class="col-md-9">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Unisize</th>
+                                <th>Size</th>
+                                <th>Brand</th>
+                                <th>Description</th>
+                                <th>ItemNumber</th>
+                                <th>Stock</th>
+                                <th>Price</th>
+                                <th>Site</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
+</body>
+</html>
